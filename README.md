@@ -159,7 +159,7 @@ With Lovable.dev handling the heavy lifting of state integration, CSS layouting,
 
 ### 🚨 Strict Warning against Clones and Plagiarism
 
-**Copyright © 2024 - Present, Mayank Malik & Pratik Sinha. All Rights Reserved.**
+**Copyright © 2026 - Present, Mayank Malik & Pratik Sinha. All Rights Reserved.**
 
 This project is **strictly proprietary and confidential**. The entire codebase, custom user interface design, visual asset configurations, responsive layout workflows, tailored state management architectures, and administrative dashboard structures are the exclusive intellectual property of **Mayank Malik** and **Pratik Sinha**.
 
