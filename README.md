@@ -1,73 +1,160 @@
-# Welcome to your Lovable project
+# 🧇 Waffle Da! Express
 
-## Project info
+<p align="center">
+  <img src="src/assets/waffle-da-logo.png" alt="Waffle Da Logo" width="160" />
+</p>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+<p align="center">
+  <strong>Delicious handcrafted waffles, fluffy pancakes & creamy shakes — made fresh, served with love.</strong>
+</p>
 
-## How can I edit this code?
+<p align="center">
+  <a href="https://vite.dev/"><img src="https://img.shields.io/badge/Vite-6495ED?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="https://supabase.com/"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" /></a>
+  <a href="https://capacitorjs.com/"><img src="https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white" alt="Capacitor" /></a>
+</p>
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+**Waffle Da!** is a premium, lightning-fast food ordering web application and companion mobile app designed specifically for ordering freshly made waffles, custom treats, and delicious quick bites. Initially conceptualized and powered by **vibe coding** on [lovable.dev](https://lovable.dev), this project offers a highly responsive customer-facing shop front coupled with a robust real-time administration panel. 
 
-Changes made via Lovable will be committed automatically to this repo.
+Perfect for campus hubs (like Bidholi, Dehradun), pop-up stalls, and late-night cravings (operating 5 PM to 5 AM!), Waffle Da! bridges premium visual aesthetics with robust full-stack state management.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Key Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🛍️ Customer Experience
+- **Interactive Multi-Category Menu:** Seamlessly browse through categories like *Waffles, Waffle Cakes, Spiral Potatoes, Hot Chocolate, French Fries, Veg/Chicken Burgers, Pastas, Shakes, Teas & Coffees*.
+- **Gourmet Customization Pop-up:** Tailor waffle creations with premium add-ons (such as Oreo, Kitkat, Nutella, Ice cream, Sprinklers, Extra Chocolate) with dynamic pricing calculation.
+- **Dynamic State Cart:** Persistent, real-time shopping cart context supporting instant volume adjustments and clear total calculations.
+- **Seamless Order Checkout:** Quick checkout form collecting user details, phone number, delivery address, and preferences.
+- **Live Order Progress Tracker:** Real-time step-by-step visual feedback of order processing from "Placed" to "Kitchen" to "Out for Delivery" to "Completed".
+- **Dynamic Pop-Up Stall Interface:** Special dedicated stall scheduling banner and specialized `/stall-menu` layout for seasonal/event pop-ups.
 
-Follow these steps:
+### 🛡️ Real-Time Admin Dashboard (`/admin`)
+- **Shop Status Manager:** Switch the primary shop state (Open/Closed) instantly with banners reflecting client-side immediately.
+- **Live Order Monitoring Desk:** Dynamic live queue listing placed orders, update progress, cancel or complete them.
+- **Stall Schedule Configurator:** Select custom dates, titles, and descriptions to deploy interactive event banners across the app.
+- **Product Inventory Control:** Quickly toggle menu item availability so out-of-stock options are automatically hidden or disabled.
+- **Analytical Insights Dashboard:** Interactive charts showing sales, revenue, and product distributions powered by Recharts.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🛠️ Technology Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Framework & Bundler:** Vite + React 18 (SPA with Client-Side Routing)
+- **Language:** TypeScript
+- **State Management & Async Queries:** React Query (TanStack Query) + React Context API
+- **Styling & Theme:** Tailwind CSS + custom glassmorphism, warm waffle-themed color gradients, and fully responsive layout + built-in dark/light mode toggle.
+- **Animations:** Framer Motion for smooth component entrance animations and page transitions.
+- **Backend Integrations:** Supabase (for persistent database interactions, user-management, and real-time operations).
+- **Icons:** Lucide React
+- **Mobile Integration:** `@capacitor/android` configuration supporting deployment as a native mobile Android package.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+---
+
+## 📁 Project Structure
+
+```
+Waffle Da Website/
+├── supabase/               # Supabase migrations, configurations & schema definition
+├── public/                 # Static assets, icons, and configuration metadata
+├── src/
+│   ├── assets/             # Images, backgrounds, and brand logo
+│   ├── components/         # Reusable UI widgets (CustomizePopup, Navbar, ThemeToggle)
+│   │   └── ui/             # Radix primitives styled via shadcn/ui
+│   ├── context/            # React Context providers (Cart, Orders, Menu, ShopStatus)
+│   ├── data/               # Static dataset fallbacks (menuData.ts catalog)
+│   ├── hooks/              # Custom reactive hooks
+│   ├── integrations/       # Supabase client hooks and database schemas
+│   ├── pages/              # Main routing pages (Index, Cart, Checkout, Admin, Menu)
+│   ├── App.tsx             # Routing matrix & application wrapper
+│   ├── index.css           # Global Tailwind directives & theme configuration
+│   └── main.tsx            # Main DOM entrypoint
+├── capacitor.config.ts     # Mobile compilation rules
+├── package.json            # Node project configuration
+└── vite.config.ts          # Vite build pipeline
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## ⚙️ Getting Started
 
-**Use GitHub Codespaces**
+Follow these instructions to run Waffle Da! locally on your system:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Prerequisites
 
-## What technologies are used for this project?
+Ensure you have **Node.js (v18+)** and **npm** or **Bun** installed.
 
-This project is built with:
+### Setup Steps
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/mayankmalik263/waffle-da-express.git
+   cd waffle-da-express
+   ```
 
-## How can I deploy this project?
+2. **Install Dependencies:**
+   Using npm:
+   ```bash
+   npm install
+   ```
+   Or using Bun:
+   ```bash
+   bun install
+   ```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory and configure your Supabase keys:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_project_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-## Can I connect a custom domain to my Lovable project?
+4. **Fire Up the Development Server:**
+   Using npm:
+   ```bash
+   npm run dev
+   ```
+   Using Bun:
+   ```bash
+   bun run dev
+   ```
+   Open `http://localhost:5173` to view the application in your browser!
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📱 Mobile Build (Capacitor)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This app supports packaging as a native Android application using Capacitor:
+
+```bash
+# 1. Build the production web bundle
+npm run build
+
+# 2. Sync web assets into the Android native project
+npx cap sync
+
+# 3. Open the native project in Android Studio
+npx cap open android
+```
+
+---
+
+## 🧠 Vibe Coding Credits
+
+This project was fully **vibe coded** with absolute speed and elegance using [Lovable.dev](https://lovable.dev) — the next-generation AI full-stack developer that turns natural language prompts into stunning React applications. 
+
+With Lovable.dev handling the heavy lifting of state integration, CSS layouting, and interactive custom workflows, we crafted a high-quality product in record time without getting bogged down in boilerplate code.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
