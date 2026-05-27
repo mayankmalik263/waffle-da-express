@@ -155,6 +155,25 @@ With Lovable.dev handling the heavy lifting of state integration, CSS layouting,
 
 ---
 
-## 📄 License
+## ⚖️ Legal Disclaimer & Proprietary Rights
 
-This project is licensed under the [MIT License](LICENSE).
+### 🚨 Strict Warning against Clones and Plagiarism
+
+**Copyright © 2024 - Present, Mayank Malik & Pratik Sinha. All Rights Reserved.**
+
+This project is **strictly proprietary and confidential**. The entire codebase, custom user interface design, visual asset configurations, responsive layout workflows, tailored state management architectures, and administrative dashboard structures are the exclusive intellectual property of **Mayank Malik** and **Pratik Sinha**.
+
+Any unauthorized attempts to:
+- ❌ **Copy, duplicate, or clone** this website or any of its sub-modules.
+- ❌ **Redistribute, sublicense, or sell** the code (in whole or in part) under any name.
+- ❌ **Reverse engineer, scrape, or extract** proprietary state context configurations, database architectures, or business patterns.
+- ❌ **Hinder, disrupt, or interfere** with the active hosting, deployment, or active development progress of this application.
+
+**WILL BE MET WITH IMMEDIATE LEGAL AND ADMINISTRATIVE ACTIONS.**
+
+We actively monitor web deployments for identical CSS footprint patterns, UI templates, and component architectures. Any detected plagiarism or copyright infringement will result in:
+1. Immediate **DMCA Takedown Requests** filed with GitHub, Vercel, Netlify, and other web host providers.
+2. Formal **Plagiarism Reports** submitted directly to academic/professional institutions and corporate recruiters.
+3. Legal **Cease-and-Desist Notices** served to the infringing parties.
+
+*For Recruiters/Hiring Managers: You are granted temporary permission to read, explore, and review the codebase for candidate evaluation purposes only. All other rights are strictly reserved.*
